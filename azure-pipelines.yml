@@ -1,0 +1,10 @@
+
+trigger:
+- master
+
+pool: ZeroConfigAgent
+
+steps:
+- script: |
+    python 'tests.py'
+  displayName: 'Test with unittest'
